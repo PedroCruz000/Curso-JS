@@ -8,16 +8,17 @@
     <style>
         body{
             background-color: azure;
+            font: normal 20pt arial ;
         }
     </style>
 </head>
 <body>
-    <h1>olá mundo </h1>
+    
     <script>
-        var n1 = Number(window.prompt("Digite um numero"))
-        var n2 = Number.parseFloat(window.prompt("Digite outro numero"))
-        var s = n1 + n2 
-        window.alert(`a soma de ${n1} e ${n2} é igual a ${s} `)
+        var nome = window.prompt("digite seu nome")
+        document.write(`Olá ${nome} seu nome tem ${nome.length} letras <br/>`)
+        document.write(`seu nome todo em maiusculo fica ${nome.toUpperCase()} <br/>`)
+        document.write(`seu nome todo em minusculo fica ${nome.toLowerCase()} `)
     </script>
 
 </body>
