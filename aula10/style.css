@@ -1,0 +1,11 @@
+
+*{
+    margin: 2px;
+    padding: 0;
+    
+}
+div{
+   background-color: gray;
+   height: 50px;
+   width: 50px;
+}
