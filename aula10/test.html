@@ -8,8 +8,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <p>1</p>
+    <div id="monitor">
+        Resultado
     </div>
+    <div id="n1" onmouseout="saiu()">
+        1
+    </div>
+    <div id="n2" onmouseout="saiu2()">
+        2
+    </div>
+    <script>
+        var a = window.document.getElementById('n1')
+        a.addEventListener('click' , clicar)
+        
+
+        function clicar(){
+            a.style.background = 'gray'
+            monitor.innerHTML = ('1')
+        }
+        function saiu(){
+            a.style.background = 'lightgray'
+        }
+
+
+
+
+        var b = window.document.getElementById('n2')
+        b.addEventListener('click' , clicar2)
+
+         function clicar2(){
+            b.style.background = 'gray'
+            monitor.innerHTML = ('2')
+         }
+         function saiu2(){
+            b.style.background = 'lightgray'
+         }
+       
+    </script>
 </body>
 </html>
