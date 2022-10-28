@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de estrangeiro </title>
+</head>
+<body>
+    <h1>Imigração</h1>
+    <p>digite seu pais de origem <input type="text" name="ipais" id="ipais"> <input type="button" value="verificar" onclick="verificar()"></p>
+    <div id="res">
+
+    </div>
+    <script>
+        var pais = window.document.getElementById('ipais')
+        function verificar(){
+            var res = window.document.getElementById('res')
+            var resposta = (ipais.value)
+            res.innerHTML = `Seu pais de origem é <strong>${resposta}</strong> ` 
+            if(resposta == 'Brasil',resposta == 'brasil'){
+                res.innerHTML += `voce é <strong>brasileiro</strong>`
+
+            }else{
+                res.innerHTML += `você é <strong>estrangeiro</strong>`
+            }
+        }
+
+    </script>
+</body>
+</html>
