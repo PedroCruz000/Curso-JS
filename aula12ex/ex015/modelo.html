@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>relógio js</title>
+    <title>verificador de imagem</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header> 
-        <h1>Título</h1>
+        <h1>Verificador de idade e genêro</h1>
     </header>
     <section>
         <div>
-            testando...
-            
+            <p>Digite o ano do seu nascimento <input type="number" name="txtano" placeholder="ex: 1994" id="txtano" min="0"  ></p>
+            <p>sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="verificador" onclick="verificar()">
+            </p>
         </div>
-        <div>
-            olá mundo
+        <div id="res">
+            <p>aguardando informações...</p>
+            <img id="foto" src="" alt="">
         </div>
     </section>    
     <footer>
